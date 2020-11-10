@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Communes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container-fluid d-flex justify-content-center p-4">
+        <div class="row justify-content-center shadow-sm">
+            <div class="col-8 text-center mb-3 p-4">
+                <h1 class="mb-4"><img src="buildings.svg" alt=""> Recherche de communes</h1>
+                <input class="form-control shadow-sm mb-3" type="text" placeholder="Entrez une ville" id="city">
+                <button class="btn btn-primary btn-block mb-3 shadow-sm" id="search">Rechercher</button>
+                <div class="alert alert-danger" id="error" style="display: none">Ville non trouvée</div>
+                <div class="alert alert-danger" id="empty-error" style="display: none">Veuillez entrer un nom de ville</div>
+                <div id="informations" class="text-left mb-3"></div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    body {
+        background-color: #F8F8F8;
+        padding: 0;
+    }
+    .row {
+        border: 1px solid lightgrey;
+        background-color: white;
+    }
+    img {
+        width: 10%;
+    }
+</style>
